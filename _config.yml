@@ -1,0 +1,24 @@
+# Site Settings
+title: Liam Pulles
+email: me@liampulles.com
+description: >
+  Read my mind...
+baseurl: ""
+url: "https://liampulles.com"
+github_username: liampulles
+# Build Settings
+sass:
+  sass_dir: _sass
+kramdown:
+  input: GFM
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
