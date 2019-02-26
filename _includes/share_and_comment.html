@@ -1,0 +1,26 @@
+<footer>
+    <section>
+        <h1>Share this piece:</h1>
+        <a href="http://www.facebook.com/sharer.php?u={{site.url | url_encode}}{{page.url | url_encode}}" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/intent/tweet?url={{site.url | url_encode}}{{page.url | url_encode}}" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{site.url | url_encode}}{{page.url | url_encode}}" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://news.ycombinator.com/submitlink?u={{site.url | url_encode}}{{page.url | url_encode}}" target="_blank">
+            <i class="fab fa-hacker-news-square"></i>
+        </a>
+        <a href="http://reddit.com/submit?url={{site.url | url_encode}}{{page.url | url_encode}}" target="_blank">
+            <i class="fab fa-reddit-square"></i>
+        </a>
+        <a href="mailto:someone@somewhere.com?subject=Check out this article&body={{site.url}}{{page.url}}">
+            <i class="fas fa-envelope-square"></i>
+        </a>
+    </section>
+    <section>
+        <h1>Comments? Send me an <a href="mailto:me@liampulles.com?subject=Comment on your piece &quot;{{ page.title }}&quot;">email</a>.</h1>
+    </section>
+</footer>
