@@ -1,6 +1,8 @@
 title: Liam Pulles
 author: Liam Pulles
 url: "https://liampulles.com/"
+email: me@liampulles.com
+projects: https://github.com/liampulles
 defaults:
   - scope:
       path: ""
