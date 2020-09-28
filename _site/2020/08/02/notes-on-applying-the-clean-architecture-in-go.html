@@ -5,8 +5,8 @@
         <meta charset="utf-8">
 
         <title>Notes on applying "The Clean Architecture" in Go</title>
-        <meta name="description" content=>
-        <meta name="author" content=Liam Pulles>
+        <meta name="description" content="">
+        <meta name="author" content="Liam Pulles">
 
         <link rel="stylesheet" href="/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
@@ -38,8 +38,8 @@
     <section>
     <p>Having had an appetite for experimenting with a REST API in Go, my research indicated that Robert
     "Uncle Bob" Martin's <i>Clean Architecture</i> is something like the "architecture of choice" among Gophers.
-    However, I have found that there is a lack of good resources out there for applying it in Go. So, here is my
-    attempt.</p>
+    However, I have found that there is a lack of good resources out there for applying it in Go. So here is my
+    attempt to fill that gap...</p>
 </section>
 <section>
     <p><i><b>Note:</b> I am not an Architect, and I've only applied this pattern on one application - so please take everything
@@ -99,21 +99,21 @@
     <aside>
         <p>This is a question I wrestled with quite a bit in this project. Firstly, remember that you are learning,
         so its okay to put down the code in a layer with a TODO and then come back later to refactor it.
-        However, I have come up with a decent set of questions you can ask yourself in order to come to a considered
+        However, I have come up with a set of questions you can ask yourself in order to come to a considered
         decision:
         <ol>
             <li><b>Can this code be copied and pasted into another application,</b> and be useful without modification? If so,
-            then it probably belongs in the entity layer. Examples include: string validation functions, e.g. isBlank(), and
+            then it probably belongs in the entity layer. Examples include: string validation functions (e.g. <i>isBlank</i>) and
             your core business logic.</li>
             <li><b>Does this code deal with orchestrating the logic of a transaction,</b> e.g. finding all users in the database?
             If so, it probably belongs in the use case layer. Examples include: the core orchestration logic (as mentioned) as
             well as factories for constructing entity types, and interfaces which code in the adapter layer must implement.</li>
             <li><b>Does the code call any external code or use any external types?</b> If so, it probably belongs in the
-            frameworks and drivers layer. Examples include: PostgreSQL driver configuration, Mux handler and server setup,
+            frameworks and drivers layer. Examples include: PostgreSQL driver configurations, Mux handlers and server setup,
             etc.</li>
             <li><b>If your code does not fit with one of the above questions,</b> and/or deals with bridging calls to and from
             the use case and driver and frameworks layers, then it probably belongs in the adapter layer. Examples include:
-            Your controllers, JSON transformers, SQL, and configuration utilities.</li>
+            Your controllers, JSON transformers, SQL code, and configuration utilities.</li>
         </ol>
         </p>
         <p>You may be thinking that a lot of the things I've put into the adapter layer may belong in the use case layer.
@@ -157,7 +157,7 @@
     <aside>
         <p>The <i>wire</i> layer sits outside of the other layers, and it deals with dependency injection. Basically, this
         layer contains a function which first creates the service instances which have no dependencies, then uses those to construct
-        the services which rely on those services, and so-on and so-forth until you've created the server, which you can then execute.</p>
+        the services which rely on those services, and so-on until you've created the server, which you can then execute.</p>
     </aside>
 </section>
 <section>
@@ -213,14 +213,14 @@
         </figure>
     </aside>
     <aside>
-        <p>I like to think of Entities as bratty Beverly Hill teenagers: whatever view of reality the Entity wants, the Entity gets -
-        no matter the cost to the use case layer (i.e. the parents).</p>
-        This includes everything ranging from:
+        <p>I like to think of Entities as bratty Beverly Hill teenagers: they have an entitled view of the world which may not map to reality.</p>
+        This abstracted view includes everything ranging from:
         <ul>
             <li>Method parameters</li>
             <li>Responses</li>
             <li>Errors</li>
             <li>Services that Entities might need to use</li>
+            <li>etc.</li>
         </ul>
         <p>Here is a good example from the Inventory Item Entity:</p>
     </aside>
@@ -241,8 +241,9 @@
     <hgroup>
         <h3>Conclusion</h3>
     </hgroup>
-    <p>I found The Clean Architecture to work very well for a REST API. It takes a fair bit of time to set up, but what
-    you are left with is a very modular and easy to change structure. I will definitely be using it going forward.</p>
+    <p>I found The Clean Architecture to work very well for a REST API, and for Go. It takes
+    a fair bit of time to set up, but what you are left with is a very modular and easy to change structure. I will
+    definitely use it for my web apps GOing forward. ;)</p>
 </section>
 
 
