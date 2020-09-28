@@ -128,7 +128,7 @@ title: Notes on applying "The Clean Architecture" in Go
     </aside>
 </section>
 <section>
-    <script src="http://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/wire/wire.go?slice=29:43&footer=minimal"></script>
+    <script src="https://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/wire/wire.go?slice=29:43&footer=minimal"></script>
 </section>
 <section>
     <aside><p></p></aside>
@@ -156,9 +156,9 @@ title: Notes on applying "The Clean Architecture" in Go
     </aside>
 </section>
 <section>
-    <script src="http://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/adapter/http/json/encoder.service.go?slice=39:49&footer=minimal"></script>
-    <script src="http://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/adapter/http/json/encoder.service.go?slice=27:33&footer=minimal"></script>
-    <script src="http://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/adapter/http/json/encoder.service.go?slice=65:73&footer=minimal"></script>
+    <script src="https://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/adapter/http/json/encoder.service.go?slice=39:49&footer=minimal"></script>
+    <script src="https://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/adapter/http/json/encoder.service.go?slice=27:33&footer=minimal"></script>
+    <script src="https://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/adapter/http/json/encoder.service.go?slice=65:73&footer=minimal"></script>
 </section>
 <section>
     <aside><p></p></aside>
@@ -193,7 +193,7 @@ title: Notes on applying "The Clean Architecture" in Go
     </aside>
 </section>
 <section>
-    <script src="http://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/domain/entity/inventory.go?slice=65:92&footer=minimal"></script>
+    <script src="https://gist-it.appspot.com/github/liampulles/matchstick-video/blob/master/pkg/domain/entity/inventory.go?slice=65:92&footer=minimal"></script>
 </section>
 <section>
     <aside><p></p></aside>
