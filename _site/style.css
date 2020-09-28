@@ -116,13 +116,6 @@ article section aside {
     vertical-align: middle;
 }
 
-article section section {
-    width: 22em;
-    display: inline-block;
-    line-height: normal;
-    vertical-align: middle;
-}
-
 article footer {
     padding-top: 6em;
 }
