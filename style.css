@@ -10,7 +10,7 @@ html {
 
 nav {
     text-align: center;
-    font-size: 120%;
+    font-size: 1.3em;
     font-style: bold;
     padding-bottom: 1em;
 }
@@ -39,10 +39,18 @@ nav ul p a {
 }
 
 nav ul p {
-    font-size: 130%;
+    font-size: 1.4em;
     display: inline-block;
     padding-right: 2em;
     font-weight: bold;
+}
+
+nav li a:hover {
+    border-bottom: 0.1em solid #cc0000;
+}
+
+nav p a:hover {
+    border-bottom: 0.1em solid black;
 }
 
 a {
@@ -50,7 +58,11 @@ a {
 }
 
 hgroup {
-    text-align: right;
+    text-align: center;
+}
+
+hgroup.align-left {
+    text-align: left;
 }
 
 h2 {
@@ -70,18 +82,30 @@ article blockquote p {
 }
 
 article {
+    font-size: 1.1em;
     width: 45em;
     margin: 0 auto;
 }
 
+article hgroup {
+    padding-bottom: 2.5em
+}
+
+article section hgroup {
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
 article section h1 {
     padding-top: 2em;
-    font-size: 1.5em;
-    text-align: center;
 }
 
 article h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
+}
+
+article h3 {
+    font-size: 1.4em;
 }
 
 article section aside {
@@ -92,23 +116,11 @@ article section aside {
     vertical-align: middle;
 }
 
-figure {
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-}
-
 article section section {
     width: 22em;
     display: inline-block;
     line-height: normal;
     vertical-align: middle;
-}
-
-article p {
-    text-indent: 2em;
 }
 
 article footer {
@@ -118,7 +130,7 @@ article footer {
 article footer h1 {
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 130%;
+    font-size: 1.3em;
 }
 
 article footer a {
@@ -126,7 +138,7 @@ article footer a {
     text-decoration: none;
 }
 
-article p a:hover {
+article a:hover {
     color: #cc0000;
 }
 
@@ -134,17 +146,24 @@ article footer a:hover {
     border-bottom: 0.1em solid #cc0000;
 }
 
-nav li a:hover {
-    border-bottom: 0.1em solid #cc0000;
+figure {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
-nav p a:hover {
-    border-bottom: 0.1em solid black;
+img {
+    max-width: 100%;
 }
 
-.fab , .fas {
+.fab, .fas {
     color: #cc0000;
-    font-size: 200%;
+    font-size: 2em;
     padding-left: 0.1em;
     text-decoration: none;
+}
+
+/* For Git Gist embeds. */
+.gist-data {
+    font-size: 0.85em !important;
 }

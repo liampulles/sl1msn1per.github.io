@@ -1,10 +1,10 @@
 ---
 ---
-<article><section><h1>Posts (newest first)</h1></section></article>
+<article><hgroup><h1>Posts (newest first)</h1></hgroup></article>
 
 {% for post in site.posts %}
 <article>
-    <h2>[{{ post.date | date_to_string }}] <a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2>{{ post.date | date_to_string }} || <a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p>{{ post.excerpt }}</p>
 </article>
 {% endfor %}
