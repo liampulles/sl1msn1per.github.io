@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Notes on applying "The Clean Architecture" in Go
+excerpt_separator: <!--more-->
 ---
 <section>
     <p>Having had an appetite for experimenting with a REST API in Go, my research indicated that Robert
@@ -8,6 +9,7 @@ title: Notes on applying "The Clean Architecture" in Go
     However, I have found that there is a lack of good resources out there for applying it in Go. So here is my
     attempt to fill that gap...</p>
 </section>
+<!--more-->
 <section>
     <p><i><b>Note:</b> I am not an Architect, and I've only applied this pattern on one application - so please take everything
     I'm about to say with a big pinch of salt.</i></p>
@@ -36,7 +38,7 @@ title: Notes on applying "The Clean Architecture" in Go
         <ul>
             <li><b>The Entity Layer</b>: This is where your business logic sits.</li>
             <li><b>The Use Case Layer</b>: This is where your application logic sits.</li>
-            <li><b>The Adapter Layer</b>: This is where the glue between between the use case and driver layers sits.</li>
+            <li><b>The Adapter Layer</b>: This is where the glue between the use case and driver layers sits.</li>
             <li><b>The Frameworks and Drivers Layer</b>: This is where code interacting with external libraries sits.</li>
         </ul>
         </p>

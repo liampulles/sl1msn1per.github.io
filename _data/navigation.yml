@@ -1,6 +1,8 @@
-- name: Projects
+- name: Code
   link: https://github.com/liampulles
 - name: About
   link: /about.html
 - name: Blog
   link: /blog.html
+- name: Digital Restorations
+  link: /digital_restorations.html

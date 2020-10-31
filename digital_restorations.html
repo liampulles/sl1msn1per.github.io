@@ -1,0 +1,12 @@
+---
+description: Digital Restorations
+---
+<article><hgroup><h1>Digital Restorations (newest first)</h1></hgroup></article>
+
+{% for post in site.digital_restorations %}
+<article>
+    <h2>{{ post.date | date_to_string }} || <a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <img src="{{ post.image }}">
+    <p>{{ post.excerpt }}</p>
+</article>
+{% endfor %}

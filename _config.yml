@@ -13,3 +13,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+collections:
+  digital_restorations:
+    output: true
+    permalink: /digital_restorations/:categories/:year/:month/:day/:title:output_ext
